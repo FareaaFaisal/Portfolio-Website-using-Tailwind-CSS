@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Responsive Portfolio</title>
+</head>
+<body class="font-sans bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white z-50 shadow-md">
+        <div class="max-w-screen-xl mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="text-2xl font-semibold text-purple-600 hover:text-purple-800">
+                <a href="#">FAREAA</a>
+            </div>
+            <label for="check" class="cursor-pointer text-purple-600 text-2xl lg:hidden">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" id="check" class="hidden">
+            <ul class="lg:flex gap-4 hidden">
+                <li><a href="/" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">Home</a></li>
+                <li><a href="/about.html" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">About</a></li>
+                <li><a href="/resume.html" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">Resume</a></li>
+                <li><a href="/portfolio.html" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">Portfolio</a></li>
+                <li><a href="/contact.html" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <div class="flex justify-center gap-12 pt-24 pb-20 flex-wrap">
+        <!-- Project Card 1 -->
+        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
+            <a href="https://figma-assignment-5u5n.vercel.app/" class="w-full">
+                <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
+                    <img src="figma.png" alt="Figma design" class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <h1 class="text-xl mt-4 text-white">Architecture Website</h1>
+                <p class="text-sm mt-2 text-white">I made this website using HTML, CSS, TypeScript, Next JS and Tailwind CSS</p>
+                <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">View This</button>
+            </a>
+        </div><br/><br/><br/><br/>
+
+        <!-- Project Card 2 -->
+        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
+            <a href="https://milestone3-4-5-omega.vercel.app/" class="w-full">
+                <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
+                    <img src="resumebuilder.png" alt="resume" class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <h1 class="text-xl mt-4 text-white">Resume Builder</h1>
+                <p class="text-sm mt-2 text-white">I made this resume Builder using HTML, CSS and TypeScript</p>
+                <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">View This</button>
+            </a><br/><br/><br/><br/>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
+            <a href="https://next-js-assignment04-05-qw4b.vercel.app/" class="w-full">
+                <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
+                    <img src="cake 6.png" height="200" width="250" alt="Bakery" class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <h1 class="text-xl mt-4 text-white">Bakery Website</h1>
+                <p class="text-sm mt-2 text-white">I made this website using HTML, CSS, Next JS</p>
+                <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">View This</button>
+            </a><br/><br/><br/><br/>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
+            <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
+                <img src="calculator.png" alt="Calculator" class="object-cover w-full h-full rounded-lg"/>
+            </div>
+            <h1 class="text-xl mt-4 text-white">Calculator</h1>
+            <p class="text-sm mt-2 text-white">I made this calculator using TypeScript only. Access it by running the following command in your CMD:</p>
+            <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">npx f2ra8-simple-calculator</button>
+        </div><br/><br/><br/><br/>
+
+        <!-- Project Card 5 -->
+        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
+            <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
+                <img src="number.png" height="200" width="200" alt="CLI-Number-guessing-game" class="object-cover w-full h-full rounded-lg"/>
+            </div>
+            <h1 class="text-xl mt-4 text-white">CLI-Number-guessing-game</h1>
+            <p class="text-sm mt-2 text-white">I made this game using TypeScript only. Access it by running the following command in your CMD:</p>
+            <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">npx far18-number-guessing-game</button>
+        </div>
+<br/><br/><br/><br/>
+        <!-- Project Card 6 -->
+        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
+            <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
+                <img src="atm.png" width="200" height="200" alt="ATM Machine" class="object-cover w-full h-full rounded-lg"/>
+            </div>
+            <h1 class="text-xl mt-4 text-white">ATM Machine Project</h1>
+            <p class="text-sm mt-2 text-white">I made this ATM project using TypeScript only. Access it by running the following command in your CMD:</p>
+            <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">npx far-atm-machine@1.0.1</button>
+        </div>
+    </div>
+
+</body>
+</html>

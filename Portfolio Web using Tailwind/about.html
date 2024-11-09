@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Responsive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-poppins">
+    <nav class="w-full fixed top-0 left-0 bg-white z-50 shadow-md">
+        <div class="max-w-screen-lg mx-auto flex items-center justify-between p-6">
+            <div class="text-xl font-semibold text-purple-500 hover:text-purple-600 transition"><a href="#">FAREAA</a></div>
+            <label for="check" class="block lg:hidden text-2xl text-purple-500 cursor-pointer">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" id="check" class="hidden">
+            <ul class="hidden lg:flex gap-6 list-none" id="nav-menu">
+                <li><a href="/" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Home</a></li>
+                <li><a href="/about.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">About</a></li>
+                <li><a href="/resume.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Resume</a></li>
+                <li><a href="/portfolio.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Portfolio</a></li>
+                <li><a href="/contact.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="min-h-screen bg-purple-50 pt-32">
+        <div class="max-w-screen-lg mx-auto p-6 grid lg:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6">
+                <p class="text-gray-500 font-semibold tracking-wide">HELLO</p>
+                <h1 class="text-4xl font-light text-gray-900">
+                    I&apos;m <span class="font-semibold">Fareaa,</span><h1></span><br /><p>a passoniate Web Developer with a passion for creating beautiful,
+                    responsive, and user-friendly websites. I&apos; ve worked on a variety of
+                    web projects, ranging from personal blogs to e-commerce platforms.
+                  </h1>
+
+                <div class="flex gap-4">
+                    <a href="mailto:fareaafaisal18@gmail.com" class="inline-block bg-purple-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-600 transition">HIRE ME</a>
+                    <a href="/portfolio.html" class="inline-block border-2 border-purple-500 text-purple-500 font-semibold py-3 px-6 rounded-lg hover:bg-purple-600 hover:text-white transition">PORTFOLIO</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="pfp-copy.jpeg" alt="profile" class="w-60 h-46 rounded-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Add additional Tailwind for responsive navbar -->
+    <style>
+        @media (max-width: 1024px) {
+            #check:checked ~ #nav-menu {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 5rem;
+                left: 0;
+                width: 100%;
+                background-color: #f3f4f6;
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</body>
+</html>
