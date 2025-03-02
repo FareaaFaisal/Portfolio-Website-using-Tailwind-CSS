@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet" />
-    <title>Responsive Portfolio</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <title>Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
 <body class="font-sans bg-gray-50">
 
     <!-- Navbar -->
-    <nav class="fixed w-full bg-white z-50 shadow-md">
-        <div class="max-w-screen-xl mx-auto px-4 py-6 flex justify-between items-center">
-            <div class="text-2xl font-semibold text-purple-600 hover:text-purple-800">
-                <a href="#">FAREAA</a>
-            </div>
-            <label for="check" class="cursor-pointer text-purple-600 text-2xl lg:hidden">
+    <nav class="w-full fixed top-0 left-0 bg-white z-50 shadow-md">
+        <div class="max-w-screen-lg mx-auto flex items-center justify-between p-6">
+            <div class="text-xl font-semibold text-purple-500 hover:text-purple-600 transition"><a href="#">FAREAA</a></div>
+            <label for="check" class="block lg:hidden text-2xl text-purple-500 cursor-pointer">
                 <i class="ri-menu-line"></i>
             </label>
             <input type="checkbox" id="check" class="hidden">
-            <ul class="lg:flex gap-4 hidden">
-                <li><a href="/" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">Home</a></li>
-                <li><a href="/about.html" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">About</a></li>
-                <li><a href="/resume.html" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">Resume</a></li>
-                <li><a href="/portfolio.html" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">Portfolio</a></li>
-                <li><a href="/contact.html" class="text-gray-800 font-semibold py-2 px-4 hover:text-yellow-600 hover:border-b-2 border-yellow-600">Contact</a></li>
+            <ul class="hidden lg:flex gap-6 list-none" id="nav-menu">
+                <li><a href="/" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Home</a></li>
+                <li><a href="/about.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">About</a></li>
+                <li><a href="/resume.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Resume</a></li>
+                <li><a href="/portfolio.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Portfolio</a></li>
+                <li><a href="/contact.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -32,71 +31,123 @@
     <!-- Projects Section -->
     <div class="flex justify-center gap-12 pt-24 pb-20 flex-wrap">
         <!-- Project Card 1 -->
-        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
-            <a href="https://figma-assignment-5u5n.vercel.app/" class="w-full">
-                <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
-                    <img src="figma.png" alt="Figma design" class="object-cover w-full h-full rounded-lg"/>
+        <div class="bg-black text-white rounded-2xl shadow-lg p-6 w-72 h-[430px] lg:h-[430px] sm:w-80 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-2xl transition duration-500">
+            <div  class="w-full flex flex-col items-center">
+                <div class="bg-purple-500 rounded-lg w-full h-44 flex justify-center items-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                    <img src="foodtuck.png"  alt="Food Resturant web" class="object-cover w-full h-full rounded-lg"/>
                 </div>
-                <h1 class="text-xl mt-4 text-white">Architecture Website</h1>
-                <p class="text-sm mt-2 text-white">I made this website using HTML, CSS, TypeScript, Next JS and Tailwind CSS</p>
-                <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">View This</button>
-            </a>
-        </div><br/><br/><br/><br/>
+                <h1 class="text-2xl font-semibold mt-4 text-white text-center">Food Resturant Website</h1>
+                <p class="text-base mt-2 text-gray-300 text-center px-2">Built with Next JS, Tailwid CSS, TypeScript, HTML, Sanity and Stripe</p>
+               <a href="https://hack-2-eight.vercel.app/"> <button class="bg-white text-black lg:py-3 py-2 lg:px-6 px-5 rounded-md lg:mt-8 mt-4 hover:bg-purple-600 hover:text-white transition-all duration-300">View Project</button></a>
+            </div>
+        </div>
+       
 
         <!-- Project Card 2 -->
-        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
-            <a href="https://milestone3-4-5-omega.vercel.app/" class="w-full">
-                <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
-                    <img src="resumebuilder.png" alt="resume" class="object-cover w-full h-full rounded-lg"/>
+        <div class="bg-black text-white rounded-2xl shadow-lg p-6 w-72 h-[430px] lg:h-[430px] sm:w-80 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-2xl transition duration-500">
+            <a href="https://figma-assignment-5u5n.vercel.app/" class="w-full flex flex-col items-center">
+                <div class="bg-purple-500 rounded-lg w-full h-44 flex justify-center items-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                    <img src="figma.png" alt="Figma design" class="object-cover w-full h-full rounded-lg"/>
                 </div>
-                <h1 class="text-xl mt-4 text-white">Resume Builder</h1>
-                <p class="text-sm mt-2 text-white">I made this resume Builder using HTML, CSS and TypeScript</p>
-                <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">View This</button>
-            </a><br/><br/><br/><br/>
+                <h1 class="text-2xl font-semibold mt-4 text-white text-center">Architecture Website</h1>
+                <p class="text-base mt-2 text-gray-300 text-center px-2">Built with HTML, CSS, TypeScript, Next.js, and Tailwind CSS.</p>
+                <button class="bg-white text-black lg:py-3 py-2 lg:px-6 px-5 rounded-md lg:mt-10 mt-6 hover:bg-purple-600 hover:text-white transition-all duration-300">View Project</button>
+            </a>
         </div>
+      
 
         <!-- Project Card 3 -->
-        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
-            <a href="https://next-js-assignment04-05-qw4b.vercel.app/" class="w-full">
-                <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
-                    <img src="cake 6.png" height="200" width="250" alt="Bakery" class="object-cover w-full h-full rounded-lg"/>
+        <div class="bg-black text-white rounded-2xl shadow-lg p-6 w-72 h-[430px] lg:h-[430px] sm:w-80 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-2xl transition duration-500">
+            <a href="https://next-js-assignment04-05-qw4b.vercel.app/" class="w-full flex flex-col items-center">
+                <div class="bg-purple-500 rounded-lg w-full h-44 flex justify-center items-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                    <img src="cake 6.png" alt="bakery" class="object-cover w-full h-full rounded-lg"/>
                 </div>
-                <h1 class="text-xl mt-4 text-white">Bakery Website</h1>
-                <p class="text-sm mt-2 text-white">I made this website using HTML, CSS, Next JS</p>
-                <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">View This</button>
-            </a><br/><br/><br/><br/>
+                <h1 class="text-2xl font-semibold mt-4 text-white text-center">Bakery Website</h1>
+                <p class="text-base mt-2 text-gray-300 text-center px-2">I made this website using HTML, CSS, Next JS</p>
+                <button class="bg-white text-black lg:py-3 py-2 lg:px-6 px-5 rounded-md lg:mt-10 mt-6 hover:bg-purple-600 hover:text-white transition-all duration-300">View Project</button>
+            </a>
         </div>
 
+    
         <!-- Project Card 4 -->
-        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
-            <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
-                <img src="calculator.png" alt="Calculator" class="object-cover w-full h-full rounded-lg"/>
-            </div>
-            <h1 class="text-xl mt-4 text-white">Calculator</h1>
-            <p class="text-sm mt-2 text-white">I made this calculator using TypeScript only. Access it by running the following command in your CMD:</p>
-            <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">npx f2ra8-simple-calculator</button>
-        </div><br/><br/><br/><br/>
+         <div class="bg-black text-white rounded-2xl shadow-lg p-6 w-72 h-[430px] lg:h-[430px] sm:w-80 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-2xl transition duration-500">
+            <a href="https://milestone3-4-5-omega.vercel.app/" class="w-full flex flex-col items-center">
+                <div class="bg-purple-500 rounded-lg w-full h-44 flex justify-center items-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                    <img src="resumebuilder.png" alt="resume"  class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <h1 class="text-2xl font-semibold mt-4 text-white text-center">Resume Builder</h1>
+                <p class="text-base mt-2 text-gray-300 text-center px-2">I made this resume Builder using HTML, CSS and TypeScript</p>
+                <button class="bg-white text-black lg:py-3 py-2 lg:px-6 px-5 rounded-md lg:mt-10 mt-6 hover:bg-purple-600 hover:text-white transition-all duration-300">View Project</button>
+            </a>
+        </div>
+
 
         <!-- Project Card 5 -->
-        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
-            <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
-                <img src="number.png" height="200" width="200" alt="CLI-Number-guessing-game" class="object-cover w-full h-full rounded-lg"/>
-            </div>
-            <h1 class="text-xl mt-4 text-white">CLI-Number-guessing-game</h1>
-            <p class="text-sm mt-2 text-white">I made this game using TypeScript only. Access it by running the following command in your CMD:</p>
-            <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">npx far18-number-guessing-game</button>
+        <div class="bg-black text-white rounded-2xl shadow-lg p-6 w-72 h-[430px] lg:h-[430px] sm:w-80 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-2xl transition duration-500">
+            <a href="https://blogs-web-phi.vercel.app/" class="w-full flex flex-col items-center">
+                <div class="bg-purple-500 rounded-lg w-full h-44 flex justify-center items-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                    <img src="5g.png" alt="blogs" class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <h1 class="text-2xl font-semibold mt-4 text-white text-center">Blogs Website</h1>
+                <p class="text-base mt-2 text-gray-300 text-center px-2">I made this website using Next JS, HTML, Tailwind CSS and Typescript</p>
+                <button class="bg-white text-black lg:py-3 py-2 lg:px-6 px-5 rounded-md lg:mt-10 mt-6 hover:bg-purple-600 hover:text-white transition-all duration-300">View Project</button>
+            </a>
         </div>
-<br/><br/><br/><br/>
+
+
+
         <!-- Project Card 6 -->
-        <div class="bg-black text-white rounded-xl shadow-lg p-6 w-60 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-xl transition duration-500">
-            <div class="bg-purple-500 rounded-lg w-full h-40 flex justify-center items-center">
-                <img src="atm.png" width="200" height="200" alt="ATM Machine" class="object-cover w-full h-full rounded-lg"/>
+        <div class="bg-black text-white rounded-2xl shadow-lg p-6 w-72 h-[430px] lg:h-[430px] sm:w-80 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-2xl transition duration-500">
+            <div  class="w-full flex flex-col items-center">
+                <div class="bg-purple-500 rounded-lg w-full h-44 flex justify-center items-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                    <img src="atm.png"  alt="ATM Machine" class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <h1 class="text-2xl font-semibold mt-4 text-white text-center">ATM Machine Project</h1>
+                <p class="text-base mt-2 text-gray-300 text-center px-2">I made this ATM project using TypeScript only. Access it by running the following command in your CMD:</p>
+                <button class="bg-white text-black lg:py-3 py-2 lg:px-6 px-5 rounded-md lg:mt-4 mt-6 hover:bg-purple-600 hover:text-white transition-all duration-300">npx far-atm-machine@1.0.1</button>
             </div>
-            <h1 class="text-xl mt-4 text-white">ATM Machine Project</h1>
-            <p class="text-sm mt-2 text-white">I made this ATM project using TypeScript only. Access it by running the following command in your CMD:</p>
-            <button class="bg-white text-black py-2 px-4 rounded-md mt-4 hover:bg-purple-600 hover:text-white">npx far-atm-machine@1.0.1</button>
+        </div>
+
+        <!-- Project Card 7 -->
+        <div class="bg-black text-white rounded-2xl shadow-lg p-6 w-72 h-[430px] lg:h-[430px] sm:w-80 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-2xl transition duration-500">
+            <div  class="w-full flex flex-col items-center">
+                <div class="bg-purple-500 rounded-lg w-full h-44 flex justify-center items-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                    <img src="calculator.png" alt="Calculator" class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <h1 class="text-2xl font-semibold mt-4 text-white text-center">Calculator</h1>
+                <p class="text-base mt-2 text-gray-300 text-center px-2">I made this calculator using TypeScript only. Access it by running the following command in your CMD:</p>
+                <button class="bg-white text-black lg:py-3 py-2 lg:px-6 px-5 rounded-md lg:mt-4 mt-6 hover:bg-purple-600 hover:text-white transition-all duration-300">npx f2ra8-simple-calculator</button>
+            </div>
+        </div>
+
+        <!-- Project Card 8 -->
+        <div class="bg-black text-white rounded-2xl shadow-lg p-6 w-72 h-[490px] lg:h-[430px] sm:w-80 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-2xl transition duration-500">
+            <div  class="w-full flex flex-col items-center">
+                <div class="bg-purple-500 rounded-lg w-full h-44 flex justify-center items-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                    <img src="number.png"  alt="CLI-Number-guessing-game" class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <h1 class="text-2xl font-semibold mt-4 text-white text-center">Number Guessing Game</h1>
+                <p class="text-base mt-2 text-gray-300 text-center px-2">I made this game using TypeScript only. Access it by running the following command in your CMD:</p>
+                <button class="bg-white text-black lg:py-3 py-2 lg:px-6 px-5 rounded-md lg:mt-4 mt-6 hover:bg-purple-600 hover:text-white transition-all duration-300">npx far18-number-guessing-game</button>
+              
+            </div>
+        </div>
+
+        <!-- Project Card 9 -->
+        <div class="bg-black text-white rounded-2xl shadow-lg p-6 w-72 h-[430px] lg:h-[430px] sm:w-80 flex flex-col items-center hover:border-4 border-purple-500 hover:shadow-2xl transition duration-500">
+            <a href="https://growthmindsetchallenge-fareaa.streamlit.app/" class="w-full flex flex-col items-center">
+                <div class="bg-purple-500 rounded-lg w-full h-44 flex justify-center items-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                    <img src="datasweeper.png" alt="data sweeper" class="object-cover w-full h-full rounded-lg"/>
+                </div>
+                <h1 class="text-2xl font-semibold mt-4 text-white text-center">Data Sweeper App</h1>
+                <p class="text-base mt-2 text-gray-300 text-center px-2">I made this website using Python and Streamlit</p>
+                <button class="bg-white text-black lg:py-3 py-2 lg:px-6 px-5 rounded-md lg:mt-10 mt-6 hover:bg-purple-600 hover:text-white transition-all duration-300">View Project</button>
+            </a>
         </div>
     </div>
+
+
+        
 
 </body>
 </html>
