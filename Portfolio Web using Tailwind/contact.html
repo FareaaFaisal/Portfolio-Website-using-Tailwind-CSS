@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Conact</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-poppins">
    
-    <nav class="fixed top-0 left-0 z-50 shadow-md" style="width: 100%; background-color: white;">
-        <div class="max-w-screen-lg mx-auto flex flex-row justify-between p-6">
-            <ul class="gap-6 list-none" id="nav-menu">
+   <nav class="w-full fixed top-0 left-0 bg-white z-50 shadow-md">
+        <div class="max-w-screen-lg mx-auto flex items-center justify-between p-6">
+            <div class="text-xl font-semibold text-purple-500 hover:text-purple-600 transition"><a href="#">FAREAA</a></div>
+            <label for="check" class="block lg:hidden text-2xl text-purple-500 cursor-pointer">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" id="check" class="hidden">
+            <ul class="hidden lg:flex gap-6 list-none" id="nav-menu">
                 <li><a href="/" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Home</a></li>
                 <li><a href="/about.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">About</a></li>
                 <li><a href="/resume.html" class="text-gray-800 font-semibold hover:border-b-2 border-yellow-500 transition">Resume</a></li>
