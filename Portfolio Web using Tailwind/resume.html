@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Static Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+  function generatePDF() {
+    const element = document.getElementById("resume");
+    const opt = {
+      margin:       0,
+      filename:     'My_Resume.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2 },
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+    html2pdf().set(opt).from(element).save();
+  }
+</script>
+
 </head>
 <body class="bg-gray-100 font-sans">
     <nav class="w-full fixed top-0 left-0 bg-white z-50 shadow-md">
@@ -24,7 +39,7 @@
         </div>
     </nav>
 
-    <div class="max-w-4xl mx-auto my-10 bg-white shadow-xl rounded-xl p-4 lg:p-0 overflow-hidden mt-36">
+    <div class="max-w-4xl mx-auto my-10 bg-white shadow-xl rounded-xl p-4 lg:p-0 overflow-hidden mt-36" id="resume">
         <div class="grid grid-cols-1 md:grid-cols-3">
             <!-- Left Side -->
             <div class="bg-[#795757] text-white p-6 flex flex-col items-center">
@@ -119,5 +134,11 @@
             </div>
         </div>
     </div>
+
+    <button onclick="generatePDF()" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition">
+  Download Resume as PDF
+</button>
+
+    
 </body>
 </html>
